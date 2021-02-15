@@ -96,7 +96,7 @@ header nav a:hover{
     flex-direction: column;
     font-size: 20px;
     color: cornsilk;
-    background-image: url(/Sites/Página\ inicial\ da\ Netflix/img/sherlock-capa.png);
+    background-image: url(img/sherlock-capa.png);
     background-size: cover;
     height: 500px;
     justify-content: center;
@@ -187,29 +187,3 @@ header nav a:hover{
 .carrossel-filmes{
     margin-top: 10px;
 }
-
-.video-player{
-    width: 75%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    display: none;
-}
-
-.video:focus{
-    outline: none;
-}
-
-.close-btn{
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 35px;
-    transition: .3s;
-}
-
-.close-btn:hover{
-    width: 40px;
-    cursor: pointer;
-} 
