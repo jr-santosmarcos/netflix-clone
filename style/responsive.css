@@ -1,0 +1,32 @@
+@media screen and (max-width:1300px){
+    header .menu2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:730px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .menu1{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .filme-principal{
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        background-position: 730px;
+    }
+
+    .titulo{
+        margin-top: 250px;
+    }
+
+
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" type="image/png" href="/Sites/Página inicial da Netflix/img/NETFLIX ICON.png"/>
+    <link rel="stylesheet" href="style/main.css"> 
+    <link rel="stylesheet" href="/Sites/Página inicial da Netflix/style/responsive.css">
+    <link rel="stylesheet" href="/Sites/Página inicial da Netflix/style/owl/owl.carousel.min.css"> 
+    <link rel="stylesheet" href="/Sites/Página inicial da Netflix/style/owl/owl.theme.default.min.css"> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="netflix-logo" src="/Sites/Página inicial da Netflix/img/NETFLIX LOGO.png" alt="Netflix Logo">
+            <nav class="menu1">
+                <a class="inicio" href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Bombando</a>
+                <a href="#">Minha Lista</a>
+            </nav>
+            <nav class="menu2">
+                <img class="lupa" src="/Sites/Página inicial da Netflix/img/LUPA ICON.png" alt="Lupa">
+                <a class="infantil" href="#">INFANTIL</a>
+                <img class="presente" src="/Sites/Página inicial da Netflix/img/PRESENTE ICON.png" alt="Compartilhe!">
+                <img class="sino" src="/Sites/Página inicial da Netflix/img/SINO ICON.png" alt="Notificações">
+                <img class="perfil" src="/Sites/Página inicial da Netflix/img/PERFIL ICON.png" alt="Perfil">
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <img class="titulo" src="/Sites/Página inicial da Netflix/img/Sherlok - logo.png" alt="Sherlock">
+            </div>
+            <div>
+                <p class="sinopse">O maior detetive de todos os tempos e seu fiel</p>
+                <p class="sinopse">companheiro chegam ao século XXI. Começa o jogo.</p>
+            </div>
+            <div class="botoes">
+                <button role="button" class="botao1">
+                    <a class="button" href="img/vid0.mp4"><i class="fas fa-play"></i>Assistir</a>
+                </button>
+                <button role="button" class="botao2">
+                    <i class="fas fa-info-circle"></i> Mais Informações
+                </button>
+            </div>
+        </div>
+        <div class="em-alta">
+            <p class="em-alta">Em alta</p>
+        </div>
+    </main>
+
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="img/vid1.mp4"><img class="box-filme" src="img/CARROSSEL-1.jpg" alt="Carrossel 1"></a>
+            </div>
+            <div class="item">
+                <a href="img/vid2.mp4"><img class="box-filme" src="/Sites/Página inicial da Netflix/img/CARROSSEL-2.jpg" alt="Carrossel 2"></a>
+            </div>
+            <div class="item">
+                <a href="img/vid3.mp4"><img class="box-filme" src="/Sites/Página inicial da Netflix/img/CARROSSEL-3.jpg" alt="Carrossel 3"></a>
+            </div>
+            <div class="item">
+                <a href="img/vid4.mp4"><img class="box-filme" src="/Sites/Página inicial da Netflix/img/CARROSSEL-4.jpg" alt="Carrossel 4"></a>
+            </div>
+            <div class="item">
+                <a href="img/vid5.mp4"><img class="box-filme" src="/Sites/Página inicial da Netflix/img/CARROSSEL-5.jpg" alt="Carrossel 5"></a>
+            </div>
+            <div class="item">
+                <a href="img/vid6.mp4"><img class="box-filme" src="/Sites/Página inicial da Netflix/img/CARROSSEL-6.jpg" alt="Carrossel 6"></a>
+            </div>
+            <div class="item">
+                <a href="img/vid7.mp4"><img class="box-filme" src="/Sites/Página inicial da Netflix/img/CARROSSEL-7.jpg" alt="Carrossel 7"></a>
+            </div>
+            <div class="item">
+                <a href="img/vid8.mp4"><img class="box-filme" src="/Sites/Página inicial da Netflix/img/CARROSSEL-8.jpg" alt="Carrossel 8"></a>
+            </div>
+            <div class="item">
+                <a href="img/vid9.mp4"><img class="box-filme" src="/Sites/Página inicial da Netflix/img/CARROSSEL-9.jpg" alt="Carrossel 9"></a>
+            </div>
+            <div class="item">
+                <a href="img/vid10.mp4"><img class="box-filme" src="/Sites/Página inicial da Netflix/img/CARROSSEL-10.jpg" alt="Carrossel 10"></a>
+            </div>
+            <div class="item">
+                <a href="img/vid11.mp4"><img class="box-filme" src="/Sites/Página inicial da Netflix/img/CARROSSEL-11.jpg" alt="Carrossel 11"></a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="video-player">
+        <video width="100%" controls id="myVideo">
+            <source src="img/vid0.mp4" type="video/mp4">
+        </video>
+        <img class="close-btn" src="img/SETA ICON.png" alt="Voltar" onclick="stopVideo()">
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/42911c96a8.js" crossorigin="anonymous"></script>
+    <script src="/Sites/Página inicial da Netflix/js/owl/jquery.min.js"></script>
+    <script src="/Sites/Página inicial da Netflix/js/owl/owl.carousel.min.js"></script>
+    <script src="/Sites/Página inicial da Netflix/js/setup.js"></script>
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer")
+        var myVideo = document.getElementById("videoPlayer")
+        
+        function stopVideo(){
+            videoPlayer.style.display = "none";
+        }
+
+        function playVideo(file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+    </script>
+</body>
+</html>
